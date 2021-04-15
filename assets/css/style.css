@@ -1,9 +1,52 @@
-/*  body * {
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+
+/*    body * {
     border: 1px solid red;
-}  */
+
+}   */
+
+
+body{
+    font-family: 'Overlock', cursive;
+    background: black;
+    color: white;
+}
+
+hr{
+    background-color:  #17a2b8;
+    margin-bottom: 2rem;
+    
+}
+.hrDos{ 
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+}
 
 /* NAVBAR */
 .logo{
+    margin-bottom: 0.5rem;
     max-width: 2rem;
 }
 
+/* CARD */
+
+.relleno{
+    margin-bottom: 1rem;
+    padding: 2% 44%;
+    
+
+}
+
+.divFooter{
+    padding: 0.8rem 12rem;
+}
+@media only screen and (max-width: 643px) {
+.divFooter{
+    padding: 0.8rem 1rem;
+      
+    }
+
+
+
+ }
