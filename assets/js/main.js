@@ -28,6 +28,19 @@ $(function(){
         }
     });
 
+   
+//EFECTO SCROLLING: cambia el nav transparente a un color al hacer scroll
+
+  $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+              $('nav').addClass('colorNav');
+        }
+
+        else {
+              $('nav').removeClass('colorNav');
+        }
+  })
+
 
 //MÉTODOS Y EVENTOS ADICIONALES:
 

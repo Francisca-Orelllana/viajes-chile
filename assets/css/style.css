@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+/*Se utiliza una tipografía desde Google Fonts llamada "Overlock" con font-weight de 400 y 700*/
 
-/*    body * {
+
+/*  body * {
     border: 1px solid red;
-
 }   */
 
 
@@ -17,6 +18,7 @@ hr{
     margin-bottom: 2rem;
     
 }
+
 .hrDos{ 
     margin-left: 4rem;
     margin-right: 4rem;
@@ -24,29 +26,33 @@ hr{
 }
 
 /* NAVBAR */
+nav.colorNav { /*Efecto SCROLLING*/
+    background: linear-gradient(120deg, #9bebdd, #17a2b8);
+    transition: all .60s ease-in-out
+}
+
 .logo{
     margin-bottom: 0.5rem;
     max-width: 2rem;
 }
 
 /* CARD */
-
 .relleno{
     margin-bottom: 1rem;
     padding: 2% 44%;
-    
-
 }
 
+
+/*FOOTER*/
 .divFooter{
     padding: 0.8rem 12rem;
 }
+
+/*Media queries, regular el espacio entre el logotipo y los iconos dentro del footer para version mobile*/
 @media only screen and (max-width: 643px) {
 .divFooter{
     padding: 0.8rem 1rem;
       
     }
-
-
 
  }
