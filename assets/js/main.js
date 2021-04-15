@@ -1,6 +1,6 @@
 $(function(){
 
-    //Bootstrap JS:
+// COMPONENTES BOOTSTRAP JS:
 
     //1.- Carousel:
     $('.carousel').carousel()
@@ -8,8 +8,12 @@ $(function(){
     //2.- Tooltip: 
     $( '[data-toggle="tooltip"]' ).tooltip()
 
+    //3.- Dropdown: 
+    $('.dropdown-toggle').dropdown()
 
-    //Efecto Smooth Scroll: uso de métodos preventDefault y animate:
+
+//EFECTO SMOOTH SCROLL: uso de métodos preventDefault y animate:
+
     $('a').click(function(event){ 
         if (this.hash !== ""){ 
             event.preventDefault(); 
@@ -24,6 +28,9 @@ $(function(){
         }
     });
 
+
+//MÉTODOS Y EVENTOS ADICIONALES:
+
     // Evento dblclick: cambiar el color de los enunciados
     let eventoDobleClick = $('h2')
     eventoDobleClick.dblclick(function(event){
@@ -32,7 +39,6 @@ $(function(){
             });
     });
         
-
     //Método Children: Ocultar y mostrar texto en los cards
 
     let ocultar = $('.card').children().find('.card-text');
